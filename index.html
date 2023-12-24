@@ -43,12 +43,12 @@
         >
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
             <li class="nav-item">
-              <a href="" class="nav-link active">Home</a>
+              <a href="#home" class="nav-link active">Home</a>
             </li>
-            <li class="nav-item"><a href="" class="nav-link">Book</a></li>
+            <li class="nav-item"><a href="#book" class="nav-link">Book</a></li>
             <li class="nav-item dropdown">
               <a
-                href=""
+                href="#packages"
                 class="nav-link dropdown-toggle"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -79,9 +79,15 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item"><a href="" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Gallery</a></li>
-            <li class="nav-item"><a href="" class="nav-link">About</a></li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#gallery" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
           </ul>
 
           <button
@@ -115,7 +121,7 @@
         background-position: center center;
       "
     >
-      <div class="mask rgba-black-light align-items-center p-5">
+      <div class="mask rgba-black-light align-items-center p-5" id="home">
         <!-- Checkpoint - 1 -->
         <div
           class="container position-absolute top-50 start-50 translate-middle"
@@ -152,7 +158,7 @@
       </div>
     </div>
     <!-- Checkpoint - 2 -->
-    <div class="form-area section2 mt-0">
+    <div class="form-area section2 mt-0" id="book">
       <div style="height: 100vh">
         <h1 class="text-center">Come fly with us</h1>
         <div class="container pb-3 box py-4 mb-5">
@@ -229,7 +235,7 @@
         </div>
       </div>
       <hr />
-      <div class="section3">
+      <div class="section3" id="packages">
         <h1 class="text-center">Locations</h1>
         <div
           class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-5 align-content-center text-center"
@@ -536,7 +542,10 @@
         </div>
       </div>
       <hr />
-      <div class="section4 mt-3 pt-5 mb-0">
+
+      <!--- Services -->
+
+      <div class="section4 mt-3 pt-5 mb-0" id="services">
         <h1 class="text-center p-1">Why choose us</h1>
         <div class="row pt-4 text-center">
           <div class="col px-2 h-100">
@@ -580,7 +589,7 @@
     </div>
     <hr />
     <!-- Checkpoint 3-->
-    <div class="checkpoint3">
+    <div class="checkpoint3" id="gallery">
       <h1 class="text-center text-bg-info">Our Gallery</h1>
       <div class="gallery p-2 mb-4">
         <div class="row">
@@ -667,7 +676,7 @@
         </div>
       </div>
       <hr />
-      <div class="about-us p-5">
+      <div class="about-us p-5" id="about">
         <div class="form-area">
           <h1 class="text-center pb-3">About Us</h1>
           <div class="container about p-5 py-4 mb-12 col-lg-12">
