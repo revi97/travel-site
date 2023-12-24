@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Avernith</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar bg-dark-subtle"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Avernith</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse gap-3"
+          id="navbarScroll"
+          tabindex="-1"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item">
+              <a href="" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">Book</a></li>
+            <li class="nav-item dropdown">
+              <a
+                href=""
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Packages</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item">France</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Germnay</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Canada</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Russia</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Italy</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Bali</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Indonesia</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="" class="nav-link">About</a></li>
+          </ul>
+
+          <button
+            class="btn btn-outline-light"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+            onclick="window.open('./components/login.html')"
+          >
+            Login
+          </button>
+          <button
+            class="btn btn-outline-light"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#registerModal"
+            onclick="window.open('./components/register.html')"
+          >
+            Register
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="view"
+      style="
+        background-image: url('/img/background-img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      "
+    >
+      <div class="mask rgba-black-light align-items-center p-5">
+        <!-- Checkpoint - 1 -->
+        <div
+          class="container position-absolute top-50 start-50 translate-middle"
+        >
+          <!--Revanth H S-->
+          <div class="row">
+            <div class="col-md-12 mb-4 text-light text-center">
+              <h1
+                class="h1-reponsive text-body-emphasis mb-0 pt-md-5 pt-5"
+                data-wow-delay="0.3s"
+              >
+                <strong>Welcome to Avernith</strong>
+              </h1>
+              <hr class="my-4 wow fadeInDown" data-wow-delay="0.4s" />
+              <h5
+                class="text-uppercase mb-4 text-black wow fadeInDown display-1"
+                data-wow-delay="0.4s"
+              >
+                <strong
+                  >Visit <span class="text-warning" id="change-text"></span
+                ></strong>
+              </h5>
+              <p
+                class="text-center mb-4 white-text wow fadeInDown"
+                data-wow-delay="0.4s"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+                quas.
+              </p>
+              <a class="btn btn-outline-light wow fadeInDown">Book Place</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Checkpoint - 2 -->
+    <div class="form-area section2 mt-0">
+      <div style="height: 100vh">
+        <h1 class="text-center">Come fly with us</h1>
+        <div class="container pb-3 box py-4 mb-5">
+          <div class="row single-form g-0">
+            <div class="col-sm-12 col-lg-6 px-1">
+              <div class="left">
+                <img
+                  src="./img/contact-us.png"
+                  style="width: 100%"
+                  alt="Image of a background"
+                />
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6 px-5">
+              <div class="right">
+                <form>
+                  <div class="mb-3">
+                    <label for="location" class="form-label">Where to?</label>
+                    <select class="form-control" name="location" id="location">
+                      <option value="defaut">Select any</option>
+                      <option value="italy">Italy</option>
+                      <option value="germany">Germany</option>
+                      <option value="france">France</option>
+                      <option value="russia">Russia</option>
+                      <option value="japan">Japan</option>
+                      <option value="mexico">Mexico</option>
+                      <option value="bali">Bali</option>
+                      <option value="indo">Indonesia</option>
+                      <option value="canada">Canada</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">How Many</label>
+                    <input type="number" class="form-control" />
+                  </div>
+                  <div class="mb-3" id="startDatePicker">
+                    <label for="" class="form-label">Start Date</label>
+                    <input
+                      type="datetime-local"
+                      name="start-date"
+                      id="start-date"
+                      class="form-control"
+                    />
+                  </div>
+
+                  <div class="mb-3" id="endDatePicker">
+                    <label for="" class="form-label">End Date</label>
+                    <input
+                      type="datetime-local"
+                      name="start-date"
+                      id="start-date"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label"
+                      >Enter your name and details</label
+                    >
+                    <br />
+                    <textarea
+                      class="form-control"
+                      aria-label="With textarea"
+                      placeholder="Enter your name and details"
+                    ></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-warning">
+                    Book Now
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="section3">
+        <h1 class="text-center">Locations</h1>
+        <div
+          class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-5 align-content-center text-center"
+        >
+          <div class="col">
+            <div class="card col-lg-8 mb-12 mb-lg-0 h-100 align-content-center">
+              <img src="./img/italy.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Italy</h4>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, accusantium. This content is a little bit longer.
+                </p>
+                <h5>Price <span>$2499</span></h5>
+                <div class="rating">
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card col-lg-8 mb-12 mb-lg-0 h-100">
+              <img src="./img/france.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">France</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, accusantium. This content is a little bit longer.
+                </p>
+                <h5>Price <span>$2499</span></h5>
+                <div class="rating">
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-half"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card col-lg-8 mb-12 mb-lg-0 h-100">
+              <img src="./img//canada.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Canada</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, accusantium. This content is a little bit longer.
+                </p>
+                <h5>Price <span>$2199</span></h5>
+                <div class="rating">
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card col-lg-8 mb-12 mb-lg-0 h-100">
+              <img src="./img/germany.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Germany</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, accusantium.
+                </p>
+                <h5>Price <span>$3099</span></h5>
+                <div class="rating">
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card col-lg-8 mb-12 mb-lg-0 h-100">
+              <img src="./img/russia.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Russia</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, accusantium.
+                </p>
+                <h5>Price <span>$2899</span></h5>
+                <div class="rating">
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card col-lg-8 mb-12 mb-lg-0 h-100">
+              <img src="./img/japan.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Japan</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, accusantium.
+                </p>
+                <h5>Price <span>$1999</span></h5>
+                <div class="rating">
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-half"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card col-lg-8 mb-12 mb-lg-0 h-100">
+              <img src="./img/mexico.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Mexico</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, accusantium.
+                </p>
+                <h5>Price <span>$1499</span></h5>
+                <div class="rating">
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-half"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card col-lg-8 mb-12 mb-lg-0 h-100">
+              <img src="./img/bali.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Bali</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, accusantium.
+                </p>
+                <h5>Price <span>$1899</span></h5>
+                <div class="rating">
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-half"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card col-lg-8 mb-12 mb-lg-0 h-100">
+              <img src="./img/indo.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Indonesia</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, accusantium.
+                </p>
+                <h5>Price <span>$1399</span></h5>
+                <div class="rating">
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                  <i
+                    class="bi-star-fill"
+                    style="font-size: 2rem; color: yellowgreen"
+                  ></i>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="section4 mt-3 pt-5 mb-0">
+        <h1 class="text-center p-1">Why choose us</h1>
+        <div class="row pt-4 text-center">
+          <div class="col px-2 h-100">
+            <h1>
+              <i class="bi bi-house-fill" style="color: yellowgreen"></i>
+            </h1>
+            <h2 style="color: yellowgreen">Afforadble Hotel</h2>
+          </div>
+          <div class="col px-2 h-100">
+            <h1>
+              <i class="bi bi-cup-straw" style="color: yellowgreen"></i>
+            </h1>
+            <h2 style="color: yellowgreen">Great Food & Drinks</h2>
+          </div>
+          <div class="col px-2 h-100">
+            <h1>
+              <i class="bi bi-person-fill-lock" style="color: yellowgreen"></i>
+            </h1>
+            <h2 style="color: yellowgreen">Safety Guide</h2>
+          </div>
+          <div class="col px-2 h-100">
+            <h1>
+              <i class="bi bi-emoji-smile-fill" style="color: yellowgreen"></i>
+            </h1>
+            <h2 style="color: yellowgreen">98% Customer Satisfaction</h2>
+          </div>
+          <div class="col px-2 h-100">
+            <h1>
+              <i class="bi bi-people-fill" style="color: yellowgreen"></i>
+            </h1>
+            <h2 style="color: yellowgreen">Professional Team</h2>
+          </div>
+          <div class="col px-2 h-100">
+            <h1>
+              <i class="bi bi-person-hearts" style="color: yellowgreen"></i>
+            </h1>
+            <h2 style="color: yellowgreen">25000+ Satisfied Customers</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Checkpoint 3-->
+    <div class="checkpoint3">
+      <h1 class="text-center text-bg-info">Our Gallery</h1>
+      <div class="gallery p-2 mb-4">
+        <div class="row">
+          <div class="col-lg-2 col-md-12 mb-6 mb-lg-0">
+            <img
+              src="./img/gallery/paul-pastourmatzis-km74CLco7qs-unsplash.jpg"
+              class="a w-100 shadow-1-strong rounded mb-4"
+              alt="Boat on Calm Water"
+            />
+
+            <img
+              src="./img/gallery/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg"
+              class="w-100 shadow-1-strong rounded mb-4 a"
+              alt="Wintry Mountain Landscape"
+            />
+          </div>
+
+          <div class="col-lg-2 mb-12 mb-lg-0">
+            <img
+              src="./img/gallery/ian-dooley-hpTH5b6mo2s-unsplash.jpg"
+              class="w-100 shadow-1-strong rounded mb-4 a"
+              alt="Mountains in the Clouds"
+            />
+
+            <img
+              src="./img/gallery/julian-timmerman-Fn27DlI8bZ8-unsplash.jpg"
+              class="w-100 shadow-1-strong rounded mb-4 a"
+              alt="Boat on Calm Water"
+            />
+          </div>
+
+          <div class="col-lg-2 mb-12 mb-lg-0">
+            <img
+              src="./img/gallery/stefan-stefancik-0wMmxNB6Xzc-unsplash.jpg"
+              class="w-100 shadow-1-strong rounded mb-4 a"
+              alt="Waves at Sea"
+            />
+
+            <img
+              src="./img/gallery/damiano-baschiera-hFXZ5cNfkOk-unsplash.jpg"
+              class="w-100 shadow-1-strong rounded mb-4 a"
+              alt="Yosemite National Park"
+            />
+          </div>
+          <div class="col-lg-2 mb-12 mb-lg-0">
+            <img
+              src="./img/gallery/chelsea-gates-0653_wY0nRc-unsplash.jpg"
+              class="w-100 shadow-1-strong rounded mb-4 a"
+              alt="Mountains in the Clouds"
+            />
+
+            <img
+              src="./img/gallery/drif-riadh-YpkuRn54y4w-unsplash.jpg"
+              class="w-100 shadow-1-strong rounded mb-4 a"
+              alt="Boat on Calm Water"
+            />
+          </div>
+          <div class="col-lg-2 mb-12 mb-lg-0">
+            <img
+              src="./img/gallery/stefan-stefancik-0wMmxNB6Xzc-unsplash.jpg"
+              class="w-100 shadow-1-strong rounded mb-4 a"
+              alt="Waves at Sea"
+            />
+
+            <img
+              src="./img/gallery/damiano-baschiera-hFXZ5cNfkOk-unsplash.jpg"
+              class="w-100 shadow-1-strong rounded mb-4 a"
+              alt="Yosemite National Park"
+            />
+          </div>
+          <div class="col-lg-2 mb-12 mb-lg-0">
+            <img
+              src="./img/gallery/chelsea-gates-0653_wY0nRc-unsplash.jpg"
+              class="w-100 shadow-1-strong rounded mb-4 a"
+              alt="Mountains in the Clouds"
+            />
+
+            <img
+              src="./img/gallery/drif-riadh-YpkuRn54y4w-unsplash.jpg"
+              class="w-100 shadow-1-strong rounded mb-4 a"
+              alt="Boat on Calm Water"
+            />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="about-us p-5">
+        <div class="form-area">
+          <h1 class="text-center pb-3">About Us</h1>
+          <div class="container about p-5 py-4 mb-12 col-lg-12">
+            <div class="row single-form g-0">
+              <div class="col-sm-12 col-lg-6 px-1">
+                <div class="left">
+                  <img
+                    src="./img/contact-us.png"
+                    style="width: 100%"
+                    alt="Image of a background"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-6 px-5">
+                <div class="right text-center">
+                  <h1 class="border-light pb-2">AVERNITH</h1>
+
+                  <h4 class="pb-3">The project started on 2014</h4>
+                  <hr />
+                  <p class="pt-3">
+                    Twenty years from now you will be more disappointed by the
+                    things you didn't do than by the ones you did do. So throw
+                    off the bowlines!
+                  </p>
+                  <p>
+                    So we started this project to help others to complete the
+                    dream of travelling
+                  </p>
+                  <hr />
+                  <h4 class="pt-4">We do hope you enjoy travelling with us</h4>
+
+                  <i class="bi bi-airplane-engines" style="font-size: 6rem"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <footer class="card-footer">
+      <div class="row px-5">
+        <div class="col">
+          <h1>Avernith</h1>
+          <br />
+          <p>CopyRight &copy; 2014-2023</p>
+          <p>All rights reserved &circledR;</p>
+        </div>
+        <div class="col">
+          <p>Socials</p>
+          <ul>
+            <li>
+              <a href="#" class="text-decoration-none text-light socials"
+                ><i class="bi bi-facebook"></i> Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-light socials"
+                ><i class="bi bi-instagram"></i> Instagram</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-light socials"
+                ><i class="bi bi-threads"></i> Threads</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-light socials"
+                ><i class="bi bi-twitter-x"></i> X (Previously Twiter)</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col text-decoration-none text-light">
+          <p>Contact</p>
+          <a
+            href="mailto:avernith@mailmail.com"
+            class="text-decoration-none text-light"
+          >
+            <i class="bi bi-envelope-at"></i>
+            E-mail</a
+          >
+          <br />
+          <a
+            href="tel:+919900897634"
+            class="text-decoration-none text-light pb-1"
+          >
+            <i class="bi bi-telephone"></i>
+            +919900897634</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- Back to top button -->
+    <button
+      type="button"
+      class="btn btn-warning btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

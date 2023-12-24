@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="compStyle.css" />
+  </head>
+  <body>
+    <div class="register mt-5">
+      <form id="registrationForm" action="submit">
+        <h2>Register</h2>
+        <div class="first-name distanceGap">
+          <label for="firstName">First Name</label>
+          <input
+            type="firstName"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name here"
+            required
+          />
+        </div>
+        <div class="last-name distanceGap">
+          <label for="lastName">Last Name</label>
+          <input
+            type="lastName"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name here"
+          />
+        </div>
+
+        <div class="phone-number distanceGap">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone Number here"
+            required
+          />
+        </div>
+        <div class="dateOfBirth distanceGap">
+          <label for="dateOfBirth">date of birth</label>
+
+          <input
+            type="date"
+            name="dateOfBirth"
+            id="dateOfBirth"
+            placeholder="Enter you date of birth"
+          />
+        </div>
+        <div class="email distanceGap">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email here"
+            required
+          />
+        </div>
+        <div class="password distanceGap">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your password here"
+            required
+          />
+        </div>
+        <div class="gender distanceGap">
+          <label for="gender">Gender</label>
+          <input
+            type="gender"
+            name="gender"
+            id="gender"
+            placeholder="Enter your gender here"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary m-4 mx-auto w-75">
+          Register
+        </button>
+        <p class="fw-bold">
+          Already registered?
+          <span><a href="./login.html" class="blockquote">Login</a></span>
+        </p>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document
+        .getElementById("registrationForm")
+        .addEventListener("submit", function (event) {
+          var firstName = document.getElementById("firstName").value;
+          var phone = document.getElementById("phone").value;
+          var email = document.getElementById("email").value;
+          var password = document.getElementById("password").value;
+
+          if (
+            firstName === "" ||
+            phone === "" ||
+            email === "" ||
+            password === ""
+          ) {
+            event.preventDefault(); // Prevent form submission if fields are empty
+
+            alert("Please fill in all required fields.");
+            // You can also add more specific error handling or styling for individual fields here
+          }
+        });
+    </script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
